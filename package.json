@@ -2,6 +2,10 @@
   "name": "ang-mat2",
   "version": "0.0.0",
   "scripts": {
+    "android": "tns run android --bundle",
+    "ios": "tns run ios --bundle",
+    "mobile": "tns run --bundle",
+    "preview": "tns preview --bundle",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -11,15 +15,25 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~8.1.2",
+    "@angular/animations": "^8.1.3",
+    "@angular/cdk": "^8.1.2",
     "@angular/common": "~8.1.2",
     "@angular/compiler": "~8.1.2",
     "@angular/core": "~8.1.2",
+    "@angular/flex-layout": "^8.0.0-beta.26",
     "@angular/forms": "~8.1.2",
+    "@angular/http": "8.0.0-beta.10",
+    "@angular/material": "^8.1.2",
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "@nativescript/schematics": "^0.6.0",
+    "nativescript-angular": "8.0.2",
+    "nativescript-theme-core": "~1.0.4",
+    "nativescript-ui-sidedrawer": "^7.0.0",
+    "reflect-metadata": "~0.1.12",
     "rxjs": "~6.4.0",
+    "tns-core-modules": "6.0.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
@@ -28,9 +42,10 @@
     "@angular/cli": "~8.1.2",
     "@angular/compiler-cli": "~8.1.2",
     "@angular/language-service": "~8.1.2",
-    "@types/node": "~8.9.4",
+    "@nativescript/schematics": "~0.4.0",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -39,9 +54,17 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "nativescript-dev-webpack": "1.0.1",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "node-sass": "4.12.0"
+  },
+  "nativescript": {
+    "id": "org.nativescript.ngsample",
+    "tns-android": {
+      "version": "6.0.1"
+    }
   }
 }

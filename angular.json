@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ang-mat2"
+    }
+  },
+  "defaultProject": "ang-mat2",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

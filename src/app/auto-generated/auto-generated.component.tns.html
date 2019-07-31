@@ -1,0 +1,32 @@
+
+
+<ActionBar class="action-bar">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android
+        because ActionItems are shown on the right side of the ActionBar
+        -->
+        <NavigationButton ios:visibility="collapsed"  icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the
+        NavigationButton as a side-drawer button in iOS is not possible,
+        because its function is to always navigate back in the application.
+        -->
+        <ActionItem icon="res://navigatio/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+            ios.position="left">
+        </ActionItem>
+        <Label class="action-bar-title" text="Home 2"></Label>
+    </ActionBar>
+
+<StackLayout>
+    
+</StackLayout>
+      
+<StackLayout sdkExampleTitle sdkToggleNavButton>
+    <!-- <GridLayout rows="80" columns="*, *"> -->
+            <Label text="home 2 works" textWrap="true"></Label>
+        <Label text="This is a migrated component" textWrap="true"></Label>
+        <Label text="Update it to provide the UI elements required in your mobile app" textWrap="true"></Label>
+        <Button text="Home" [nsRouterLink]="['/home']" class="btn btn-primary"></Button>
+    <!-- </GridLayout> -->
+    <!-- <router-outlet></router-outlet> -->
+</StackLayout>
