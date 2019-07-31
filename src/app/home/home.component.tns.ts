@@ -5,7 +5,7 @@ import * as app from "tns-core-modules/application";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.tns.html',
-  styleUrls: ['./home.component.tns.css']
+  styleUrls: ['./home.component.tns.scss']
 })
 export class HomeComponentTns implements OnInit {
 
