@@ -37,4 +37,4 @@ Run `ng serve`
 
 Run `tns run android --bundle` 
 
-![alt text](android1.png | width=100)
+![alt text](android1.png)
