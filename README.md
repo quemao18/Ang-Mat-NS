@@ -36,3 +36,5 @@ Run `ng serve`
 ## Runing in Emulator Android
 
 Run `tns run android --bundle` 
+
+![alt text](android1.png)
